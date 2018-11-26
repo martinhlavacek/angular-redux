@@ -10,6 +10,7 @@ import { reducer } from './reducers/tutorial.reducer';
 import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { environment } from '../environments/environment';
       tutorial: reducer
     }),
     StoreDevtoolsModule.instrument({ maxAge: 50 }),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

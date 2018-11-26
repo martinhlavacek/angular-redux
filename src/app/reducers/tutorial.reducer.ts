@@ -15,7 +15,7 @@ export function reducer(state: Tutorial[] = [initializeState], action: TutorialA
 
 
         case TutorialActions.REMOVE_TUTORIAL:
-            state.splice(action.payload)
+            state.splice(action.payload, 1);
             return state;
         default:
             return state;
