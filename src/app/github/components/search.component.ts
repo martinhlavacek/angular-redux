@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import {Store} from '@ngrx/store';
 import {AppState} from '../../app.state';
 import * as GithubActions from '../github.actions';
-import { Observable } from 'rxjs';
 
 
 @Component({

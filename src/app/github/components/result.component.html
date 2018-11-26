@@ -1,19 +1,19 @@
-<div class="container">
-    <H1 *ngIf="githubUser">Github User</H1>
-    <div *ngIf="githubUser">
-            <h4 *ngIf="githubUser">id </h4>
-            <label>{{githubUser?.id}}</label>
-        </div>
-    <div *ngIf="githubUser">
+<div class="container" *ngIf="githubUser">
+    <H1>Github User</H1>
+    <div>
+        <h4>id </h4>
+        <label>{{githubUser?.id}}</label>
+    </div>
+    <div>
         <h4>login</h4>
         <label>{{githubUser?.login}}</label>
         <br/>
     </div>
-    <div *ngIf="githubUser">
-        <h4 *ngIf="githubUser">avatar url </h4>
+    <div>
+        <h4>avatar url </h4>
         <label>{{githubUser?.avatar_url}}</label>
     </div>
-    <div *ngIf="githubUser">
+    <div>
         <h4>url </h4>
         <label>{{githubUser?.url}}</label>
     </div>

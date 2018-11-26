@@ -3,7 +3,7 @@ import { Actions, Effect, ofType } from '@ngrx/effects';
 import * as gitHubAction from './github.actions';
 
 import { GithubService } from './github.service';
-import { Observable, of } from 'rxjs';
+import { of } from 'rxjs';
 import { switchMap, map, catchError } from 'rxjs/operators';
 
 @Injectable()

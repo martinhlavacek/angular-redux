@@ -2,7 +2,7 @@ import { Injectable} from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { IGithubrResult } from '../models/github-result.model';
-import {mergeMap, map} from 'rxjs/operators';
+import { map} from 'rxjs/operators';
 
 @Injectable()
 export class GithubService {
