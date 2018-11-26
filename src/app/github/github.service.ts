@@ -6,9 +6,7 @@ import {mergeMap, map} from 'rxjs/operators';
 
 @Injectable()
 export class GithubService {
-    constructor(private http: HttpClient) {
-
-    }
+    constructor(private http: HttpClient) { }
 
     getGitHubUserInfo(username: string): Observable<IGithubrResult> {
         return this.http.get('https://api.github.com/users/' + username).pipe(
